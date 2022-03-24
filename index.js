@@ -1,14 +1,14 @@
-const sensor = new AbsoluteOrientationSensor();
-const mat4 = new Float32Array(16);
-sensor.start();
-sensor.onerror = event => console.log(event.error.name, event.error.message);
+// const sensor = new AbsoluteOrientationSensor();
+// const mat4 = new Float32Array(16);
+// sensor.start();
+// sensor.onerror = event => console.log(event.error.name, event.error.message);
 
-sensor.onreading = () => {
-  sensor.populateMatrix(mat4);
-};
+// sensor.onreading = () => {
+//   sensor.populateMatrix(mat4);
+// };
 
 
-let startElem = document.querySelector("p");
+let startElem = document.getElementById("sesn");
 let endElem = startElem.querySelector("span");
 let range = document.createRange();
 
